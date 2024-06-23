@@ -2,7 +2,7 @@
 
 arrange:
 
-- open http://http://localhost:5173/login
+- open http://localhost:5173/login
 
 act:
 

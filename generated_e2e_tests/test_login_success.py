@@ -12,7 +12,7 @@ def test_login_success():
         driver.find_element(By.CSS_SELECTOR, "[data-test-id='password-input']").send_keys("password")
         driver.find_element(By.CSS_SELECTOR, "[data-test-id='submit-button']").click()
         current_url = driver.current_url
-        welcome_title = driver.find_element(By.CSS_SELECTOR, "[data-test-id='welcome-title']").text
+        welcome_title = driver.find_element(By.CSS_SELECTOR, "[data-test-id='welcome-title']").text.strip()
 
         # Assert: Verify the results
         expected_url = "http://localhost:5173/welcome"
