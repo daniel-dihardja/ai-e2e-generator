@@ -139,9 +139,7 @@ Do not add any other answers, explanations, or comments. Just generate the Pytho
 """
 ```
 
-2. **Markdown Parsing**: The markdown specification is parsed to extract the relevant sections (Arrange, Act, Assert). Each section is then transformed into corresponding Selenium commands using the prompt template.
-
-3. **AI Integration**: The LangChain library is used to interact with the OpenAI language model, passing the constructed prompt and receiving the generated Python code.
+2. **AI Integration**: The LangChain library is used to interact with the OpenAI language model, passing the constructed prompt and receiving the generated Python code.
 
 ````python
 def generate_e2e_test(spec_file):
@@ -156,7 +154,7 @@ def generate_e2e_test(spec_file):
     utils.write_to_file(f"generated_e2e_tests/{file_name}", cleaned_code)
 ````
 
-4. **Output Generation**: The resulting Python code is cleaned and saved to a file for execution.
+3. **Output Generation**: The resulting Python code is cleaned and saved to a file for execution.
 
 ## Conclusion
 
